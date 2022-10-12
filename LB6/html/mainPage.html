@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File Manager</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/mainPage.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="files_div basic_div">
+                <span class="span_caption">Файлы</span>
+                <div class="files" id="filePanel"></div>
+                <form class="form_controls" method="POST" action="../script/mainPage.php" id="mainForm">
+                    <input type="text" name="index" hidden id="textIndex">
+                    <input type="text" name="choosedFileName" hidden id="textChoosedFile">
+
+                    <input type="radio" name="control" value="removeFile" hidden id="radio_remove">
+                    <input type="radio" name="control" value="getFile" hidden id="radio_get">
+
+                    <input type="checkbox" name="showPreview" hidden id="previewCheckbox">
+                    
+                    <button class="basic_button" onclick='radio_remove.checked="checked";'>Удалить</button>
+                    <button class="basic_button" onclick='radio_get.checked="checked";'>Скачать</button>
+                </form>
+
+                <form  class="form_controls" style="height:50px;" enctype="multipart/form-data" action="mainPage.php" method="POST">
+                    <input type="text" name="index" hidden id="textIndex2">
+                    <input type="radio" name="control" value="addFile" hidden id="radio_add">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="10000000">
+                    <input name="userfile" type="file" style="font-size: inherit;" class="basic_button">
+                    <button class="basic_button" onclick='radio_add.checked="checked";'>Загрузить</button>
+                </form>
+            </div>
+
+            <div class="preview_div basic_div" id="previewList">
+                <span class="span_caption">Предпросмотр</span>
+            </div>
+        </div>
+    </body>
+</html>

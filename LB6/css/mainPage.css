@@ -1,0 +1,89 @@
+body{
+    height: 100vh;
+    margin: 0px;
+}
+
+
+.wrapper{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 233, 250);
+    font-size: 1.3rem;
+}
+
+.basic_div{
+    min-height: 500px;
+    min-width: 300px;
+    height: 80%;
+    margin: 0px 10px;
+    padding: 10px;
+    background-color: rgb(167, 167, 198);
+}
+
+.files_div{
+    position: relative;
+    width: 30%;
+}
+
+.preview_div{
+    width: 50%;
+}
+
+.preview_item{
+    width: 100%;
+    height: 80%;
+}
+
+.preview_item_img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.preview_item_text{
+   font-size: inherit;
+   overflow: scroll;
+   word-break: break-all;
+}
+
+.span_caption{
+    text-align: center;
+    display: block;
+    margin: 10px 0px;
+    height: 10%;
+}
+
+.files{
+    height: 60%;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.form_controls{
+    height: 15%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic_button{
+    font-size: inherit;
+    margin: 0px 10px;
+}
+
+.file_item{
+    font-size: inherit;
+    padding: 10px;
+}
+
+.file_item:hover{
+    font-size: inherit;
+    background-color: bisque;
+}
+
+.file_item_choosed{
+    background-color: blue;
+}

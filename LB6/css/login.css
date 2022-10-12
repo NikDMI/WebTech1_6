@@ -1,0 +1,75 @@
+
+
+body{
+    height: 100vh;
+    margin: 0px;
+}
+
+
+.wrapper{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 233, 250);
+}
+
+#mainForm{
+    font-size: 1.5rem;
+    background-color: rgb(167, 167, 198);
+    width: 18em;
+    height: 15em;
+    border-radius: 5%;
+    border: solid rgb(147, 147, 185) 5px;
+}
+
+.form--line{
+    width: 14em;
+    padding: 0.5em 2em 0.5em 2em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.form--line label{
+    display: inline-block;
+    font-size: inherit;
+    width: 4em;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.form--line--edit{
+    font-size: inherit;
+    width: 10em;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.form--line--header{
+    display: block;
+    font-size: inherit;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0px;
+}
+
+.form--line-text{
+    display: inline-block;
+    font-size: inherit;
+    overflow: hidden;
+}
+
+.form--line--checkbox{
+    display: block;
+    transform:scale(1.3);
+    margin: 0px;
+    margin-right: 1em;
+}
+
+.form--line--button{
+    font-size: inherit;
+}
